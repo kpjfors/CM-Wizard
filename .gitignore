@@ -1,0 +1,11 @@
+include/
+lib/
+lib64/
+migrations/
+auth.txt
+app.db
+__pycache__/
+app/__pycache__/
+bin/
+pyenv.cfg
+lib64
