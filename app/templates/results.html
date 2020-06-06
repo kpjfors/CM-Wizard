@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Results from CardMarket</h1>
+    {% for card in cards %}
+<div style="display: flex;">
+    <form action = "" method = "POST">
+        {{form.csrf_token}}
+        {{form.img(value=card.img)}}
+        {{form.name(value=card.name)}}
+        {{form.idProduct(value=card.idProduct)}}
+        <input type="image" src="{{card.img}}" border="0" title = "{{card.name}}" alt="Submit" height ="300"/>
+    </form>
+</div>
+    {% endfor %}
+{% endblock %}

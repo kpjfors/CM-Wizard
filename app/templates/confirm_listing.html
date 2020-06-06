@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Confirm adding to DB</h1>
+<img src=' {{cardInfo.img}} ' title='{{cardInfo.name}}'>
+<br>
+<form action="" method="POST">
+
+    {{form.csrf_token}}
+
+    {{form.img(value = cardInfo.img)}}
+    {{form.idProduct(value = cardInfo.idProduct)}}
+    {{form.name(value = cardInfo.name)}}
+
+    Condition <br>
+    {{form.condition}} <br><br>
+    Language <br>
+    {{form.idLanguage}} <br><br>
+    Foiled
+    {{form.isFoil}}
+    Quantity <br>
+    {{form.count(value = 1)}}<br><br>
+    Comments <br>
+    {{form.comments}}<br><br>
+    <br>
+    <input type="submit" value = Submit>
+</form>
+{% if form.errors %}
+        {{ form.errors }}
+{% endif %}
+{% endblock %}

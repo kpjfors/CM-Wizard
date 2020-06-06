@@ -1,0 +1,8 @@
+App token:XXXXXXXXXX
+App secret:XXXXXXXXXX
+Access token:XXXXXXXXXXX
+Access token secret:XXXXXXXXXX
+
+
+####The auth file should be formatted as above. You can change the name of this file, delete this comment and fill in
+####the tokens for your app.

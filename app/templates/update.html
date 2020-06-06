@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Search Your Own DB</h1>
+<form action="" method="POST">
+    {{form.csrf_token}}
+    {{form.search}}
+    {{form.submit(value = "Submit")}}
+</form>
+{% endblock %}
