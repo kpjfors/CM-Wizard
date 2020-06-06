@@ -9,7 +9,7 @@ class Card(db.Model):
     condition = db.Column(db.String(2), unique=False, nullable=False)
     count = db.Column(db.Integer, unique=False, nullable=False)
     isFoil = db.Column(db.String) #Boolean but should take "true/false" as string instead
-   # isSigned = db.Column(db.String)
+   # isSigned = db.Column(db.String) #To be implemented...
    # isAltered = db.Column(db.String)
    # isPlayset = db.Column(db.String)
     idArticle = db.Column(db.String)
