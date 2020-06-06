@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>MTG Command Center 9000</h1>
+        What do you want to do?
+        <br>
+        <a href="{{url_for('search')}}">Add New</a>
+        <br>
+        <a href="{{url_for('update')}}">Modify Existing</a>
+{% endblock %}
