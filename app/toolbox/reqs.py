@@ -14,7 +14,6 @@ from app.toolbox import xmler
 # signature
 
 def generate_nonce(length=13):
-    """Generate pseudorandom number."""
     return ''.join([str(random.randint(0, 9)) for i in range(length)])
 
 
@@ -144,17 +143,13 @@ def main(url, realm, method, args={}, data=None):
 
     if method == "GET":
         resp = requests.get(url, headers={"Authorization": header_to_string(auth_header)})
-        # print(resp, resp.text, file = sys.stderr)
         return resp
     if method == "POST":
         resp = requests.post(url, headers={"Authorization": header_to_string(auth_header)}, data=data)
-        # print(resp, resp.text, file=sys.stderr)
         return resp
     if method == "PUT":
         resp = requests.put(url, headers={"Authorization": header_to_string(auth_header)}, data=data)
-        # print(resp, resp.text, file=sys.stderr)
         return resp
     if method == "DELETE":
         resp = requests.delete(url, headers={"Authorization": header_to_string(auth_header)}, data=data)
-        # print(resp, resp.text, file=sys.stderr)
         return resp

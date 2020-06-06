@@ -29,7 +29,7 @@ def main(priceLimit, priceMod):
         arg.update({"price": finprice})
         try:
             if finprice > priceLimit:
-                resp = json.loads(reqs.post(arg).text)  # get article object extract idArticle.
+                resp = json.loads(reqs.post(arg).text) 
                 article = resp['inserted'][0]
                 if article['success']:
                     idArticle = article['idArticle']['idArticle']
@@ -41,7 +41,6 @@ def main(priceLimit, priceMod):
                 else:
                     print('Failed in posting {}'.format(article['product']['enName']))
             else:
-                # print("Price too low for {0}. ({1} €).".format(arg["name"],finprice))
                 j += 1
         except:
             print("Error posting listing.")

@@ -7,7 +7,6 @@ from wtforms import StringField, SelectField, SelectMultipleField, IntegerField,
 from wtforms.validators import DataRequired
 from app.toolbox import db_util, cmSearch
 from app.models import Card
-import sys
 from urllib.parse import quote, unquote
 
 
