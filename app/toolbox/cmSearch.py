@@ -1,7 +1,7 @@
 import json
 import sys
 
-from app.toolbox import reqs
+import reqs
 
 
 class Card:
@@ -14,6 +14,8 @@ class Card:
 def searcher(search):
     cards = []
     resp = reqs.getid(search)
+    print(resp, file=sys.stderr)
+    print(resp.text, file=sys.stderr)
     resp = json.loads(resp.text)
     for product in resp['product']:
         catname = product["categoryName"]

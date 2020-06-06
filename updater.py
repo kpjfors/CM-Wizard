@@ -3,7 +3,7 @@ import sqlite3
 from time import localtime, strftime
 
 from config import Config
-from app.toolbox import reqs
+from toolbox import reqs
 
 
 def main(priceLimit, priceMod):

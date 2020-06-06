@@ -1,4 +1,0 @@
-appToken:2T7pPQF7He0drLWS
-appSecret:Z6DIgx7QRZNfNzMOPIQvXVxoggywDZuH
-accessToken:3mQa2sJELFj1apA3N4WSqeynYx2LKuMc
-accessSecret:nGUFzZgeKAa1HneTaNeJNDIkkktPP4K6
