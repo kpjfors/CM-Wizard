@@ -5,6 +5,7 @@ Requires app tokens from CardMarket.\
 \
 To install:\
 -Run setup.sh (preferrably in a virtual environment). \
+-Fill in your tokens in a file called auth.txt in root directory. For formatting see exampleauth.txt
 -You are done! \
 \
 To use:\
