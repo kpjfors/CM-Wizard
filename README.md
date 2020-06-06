@@ -3,7 +3,7 @@ Project for managing postings on Cardmarket using their API and a local SQLite d
 \
 Requires app tokens from CardMarket.\
 \
-To install:
+To install:\
 -Run setup.sh (preferrably in a virtual environment). \
 -You are done! \
 \
