@@ -1,5 +1,5 @@
 # CM-Wizard
-Project for managing postings on Cardmarket using their API and a local SQLite database. \
+Tools for managing postings on Cardmarket, and a local database of cards using CardMarkets API, Flask, and a local SQLite database. \
 \
 Requires app tokens from CardMarket.\
 \
