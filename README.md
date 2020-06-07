@@ -4,8 +4,8 @@ Tools for managing postings on Cardmarket, and a local database of cards using C
 Requires app tokens from CardMarket.\
 \
 To install:\
--Run setup.sh (preferrably in a virtual environment). \
 -Fill in your tokens in a file called ```auth.txt``` in root directory. For formatting see ```exampleauth.txt```\
+-Run setup.sh (preferrably in a virtual environment). \
 -You are done! \
 \
 To use:\
